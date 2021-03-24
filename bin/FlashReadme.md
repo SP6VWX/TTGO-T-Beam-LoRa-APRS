@@ -1,1 +1,11 @@
 How to binary flash readme...
+
+Download ESPHome Flasher (either x86-32bit Windows or x64-64 bit Windows).
+https://github.com/esphome/esphome-flasher/releases
+Connect your board to your USB port and open ESPHome Flasher.
+If your board is not showing under Serial Port then you likely need to install the drivers for the CP210X serial chip. In Windows you can check by searching “Device Manager” and ensuring the device is shown under “Ports”.
+If there is an error, download the drive and make sure your board is present in Device Manager as COM port
+In ESPHome Flasher, refresh the serial ports and select your board serial port.
+Browse to the downloaded firmware and select the correct firmware based on the board type.
+Select Flash ESP.
+Once complete, “Done! Flashing is complete!” will be shown.
